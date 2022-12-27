@@ -2,7 +2,10 @@
 __pycache__
 *.env
 assets/
-airflow
+airflow/logs
+airflow/airflow.cfg
+airflow/airflow.db
+airflow/webserver_config.py
 *.ipynb
 *.txt
 *.pdf

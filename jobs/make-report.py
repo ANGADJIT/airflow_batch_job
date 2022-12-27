@@ -56,6 +56,10 @@ results = [dict(line) for line in [zip(
 
 file_names = [result['file_name'] for result in results]
 
+# exit if there is no files for processing
+if len(file_names) == 0:
+    exit()
+
 # get all file from S3 for processing
 s3 = boto3.client(service_name='s3', region_name=env['AWS_REGION'],
                   aws_access_key_id=env['AWS_ACCESS_KEY_ID'],
