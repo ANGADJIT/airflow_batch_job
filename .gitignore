@@ -1,6 +1,10 @@
-.venv
-venv
 .python-version
 __pycache__
-.env
+*.env
 assets/
+airflow
+*.ipynb
+*.txt
+*.pdf
+build
+*.egg-info
