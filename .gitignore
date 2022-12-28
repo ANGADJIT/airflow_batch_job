@@ -1,0 +1,13 @@
+.python-version
+__pycache__
+*.env
+assets/
+airflow/logs
+airflow/airflow.cfg
+airflow/airflow.db
+airflow/webserver_config.py
+*.ipynb
+*.txt
+*.pdf
+build
+*.egg-info
