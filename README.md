@@ -21,6 +21,8 @@
         pdf report updating the table attribute 'is_processed'=true
 </ol>
 <br>
+<img src="https://user-images.githubusercontent.com/67195682/209856989-178b5a2e-09e0-4c29-84c9-f56c634dd60e.png">
+<br>
 <h2>Project dependencies</h2>
 <ol>
     <li>
