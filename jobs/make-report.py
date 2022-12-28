@@ -128,7 +128,11 @@ html.close()
 
 # after pdf uploaded to s3 update the table
 
-update_query: str = f"update file_audit_enitity set is_processed=true where file_name in {tuple(file_names)}"
+if len(file_names) == 1:
+    update_query: str = f"update file_audit_enitity set is_processed=true where file_name='{file_names[0]}'"
+
+else:
+    update_query: str = f"update file_audit_enitity set is_processed=true where file_name in {tuple(file_names)}"
 
 cursor.execute(update_query)
 conn.commit()
